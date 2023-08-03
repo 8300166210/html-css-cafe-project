@@ -1,0 +1,53 @@
+:root{
+    --darkpink:#5c4dff;
+    --red:crimson;
+    --green:#53BF9D;
+    --white:whitesmoke;
+}body{background: rgb(174,238,237);
+    background: radial-gradient(circle, rgba(174,238,237,1) 0%, rgba(228,233,148,1) 100%);
+                       
+}
+h2{
+    background-position: center;
+    color:hotpink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,100px,1fr));
+    
+    color:var(--darkpink);
+    margin-top:2em;
+}
+#menuheading{
+    
+    font-size:2.5em;
+    color:var(--red);
+    display:flex;
+    justify-content:center;
+}
+
+.menu th{
+    color:var(--red);
+    font-size: 1.8em;
+}
+table{
+    width:100%;
+    padding: 1em;
+}
+.menu tr{
+    display:flex;
+    justify-content:center;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+    }
+.menu td:nth-child(2){
+        justify-self:right;
+}
+
+.maincourse{
+    grid: row span 1px;
+}
